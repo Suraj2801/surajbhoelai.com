@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suraj Bhoelai — Guitarist &amp; PDF Tablature</title>
+  <meta name="description" content="Official website of guitarist Suraj Bhoelai. Watch YouTube guitar performances and download accurate PDF tablature transcriptions via Payhip." />
+
+  <!-- Google Fonts: Japandi Editorial Serif & Clean Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            linen: '#F7F4EF',
+            sand: '#EFEAE1',
+            clay: '#E5DDD0',
+            stone: '#DFD8CC',
+            charcoal: '#2A2622',
+            umber: '#5F5850',
+            muted: '#8C8378',
+            oak: '#B08968',
+            oakDark: '#8C6D4F',
+            sage: '#7A8471',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #F7F4EF;
+      color: #2A2622;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subtle Japandi organic grain texture */
+    .washi-surface {
+      background-image: radial-gradient(rgba(42, 38, 34, 0.03) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    .japandi-card {
+      background-color: #EFEAE1;
+      border: 1px solid #DFD8CC;
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .japandi-card:hover {
+      transform: translateY(-3px);
+      border-color: #B08968;
+      box-shadow: 0 14px 30px -12px rgba(42, 38, 34, 0.08);
+    }
+
+    .btn-oak {
+      background-color: #2A2622;
+      color: #F7F4EF;
+      transition: background-color 0.25s ease, transform 0.2s ease;
+    }
+
+    .btn-oak:hover {
+      background-color: #8C6D4F;
+    }
+
+    .btn-outline {
+      border: 1px solid #C8BFA8;
+      color: #2A2622;
+      background-color: transparent;
+      transition: border-color 0.25s ease, background-color 0.25s ease;
+    }
+
+    .btn-outline:hover {
+      border-color: #2A2622;
+      background-color: #EFEAE1;
+    }
+
+    .filter-pill.active {
+      background-color: #2A2622;
+      color: #F7F4EF;
+      border-color: #2A2622;
+    }
+  </style>
+</head>
+<body class="washi-surface selection:bg-oak/20 selection:text-charcoal">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-linen/90 backdrop-blur-md border-b border-stone">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <span class="w-8 h-8 rounded-full border border-charcoal/30 flex items-center justify-center font-serif text-base text-charcoal group-hover:border-oak transition-colors">
+          間
+        </span>
+        <span class="font-serif text-2xl tracking-wide text-charcoal font-medium">
+          Suraj Bhoelai
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-9 text-sm text-umber">
+        <a href="#videos" class="hover:text-charcoal transition-colors">Performances</a>
+        <a href="#tabs" class="hover:text-charcoal transition-colors">PDF Tabs</a>
+        <a href="#about" class="hover:text-charcoal transition-colors">About</a>
+        <a href="#contact" class="hover:text-charcoal transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a id="nav-payhip-btn" href="https://payhip.com" target="_blank" rel="noopener noreferrer"
+           class="btn-oak px-5 py-2.5 rounded-full text-xs uppercase tracking-widest font-medium inline-flex items-center gap-2">
+          <span>Payhip Store</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7V16" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 md:py-28 border-b border-stone">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7 space-y-7">
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-sand border border-stone text-xs uppercase tracking-widest text-umber">
+          <span class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+          <span>Guitar Arrangements &amp; Transcriptions</span>
+        </div>
+
+        <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.08] font-normal text-charcoal">
+          Expressive guitar, <br />
+          <span class="italic text-oakDark">transcribed note for note.</span>
+        </h1>
+
+        <p class="text-umber text-base md:text-lg leading-relaxed max-w-xl font-light">
+          Watch my latest YouTube guitar arrangements and download clean, accurate PDF tablature &amp; standard notation directly through my official Payhip store.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a href="#tabs" class="btn-oak px-7 py-3.5 rounded-full text-xs uppercase tracking-widest font-medium">
+            Browse PDF Tabs
+          </a>
+          <a href="#videos" class="btn-outline px-7 py-3.5 rounded-full text-xs uppercase tracking-widest font-medium">
+            Watch Performances
+          </a>
+        </div>
+
+        <div class="pt-6 border-t border-stone/80 flex flex-wrap gap-8 text-xs text-muted uppercase tracking-widest">
+          <div>
+            <span class="block font-serif text-2xl text-charcoal normal-case tracking-normal">Instant PDF</span>
+            <span>Delivered via Payhip</span>
+          </div>
+          <div>
+            <span class="block font-serif text-2xl text-charcoal normal-case tracking-normal">Tabs + Notation</span>
+            <span>Clear fingerings &amp; timing</span>
+          </div>
+          <div>
+            <span class="block font-serif text-2xl text-charcoal normal-case tracking-normal">Video Matched</span>
+            <span>100% true to each recording</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minimalist Japandi Visual Frame -->
+      <div class="md:col-span-5">
+        <div class="relative rounded-2xl overflow-hidden bg-sand border border-stone p-4">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden relative bg-clay">
+            <img
+              src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=900&q=80"
+              alt="Acoustic and electric guitar in warm natural light"
+              class="w-full h-full object-cover object-center sepia-[.12] contrast-[.96]"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/50 via-transparent to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 text-linen">
+              <p class="text-[11px] uppercase tracking-widest opacity-80">Featured Transcription</p>
+              <p id="hero-featured-title" class="font-serif text-2xl mt-0.5">Autumn Leaves — Solo Guitar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube Video Showcase Section -->
+  <section id="videos" class="py-20 md:py-24 border-b border-stone">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-oakDark mb-2">YouTube Performances</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-charcoal font-normal">
+            Watch &amp; Learn the Arrangements
+          </h2>
+        </div>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"
+           class="text-xs uppercase tracking-widest text-umber hover:text-charcoal inline-flex items-center gap-2 border-b border-stone pb-1 self-start md:self-auto">
+          <span>Visit YouTube Channel</span>
+          <span>↗</span>
+        </a>
+      </div>
+
+      <!-- Main Active Video Player + Companion Payhip Link -->
+      <div class="japandi-card rounded-2xl p-5 md:p-8 mb-8">
+        <div class="aspect-video w-full rounded-xl overflow-hidden bg-charcoal border border-stone">
+          <iframe
+            id="main-youtube-player"
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/jfKfPfyJRdk?rel=0"
+            title="Suraj Bhoelai Guitar Performance"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="mt-6 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="space-y-1.5">
+            <div class="flex flex-wrap items-center gap-3 text-xs text-muted uppercase tracking-wider">
+              <span id="active-video-category" class="px-2.5 py-0.5 rounded-full bg-linen border border-stone text-umber">Fingerstyle</span>
+              <span id="active-video-tuning">Tuning: Standard (E A D G B E)</span>
+              <span>•</span>
+              <span id="active-video-pages">4 Pages PDF</span>
+            </div>
+            <h3 id="active-video-title" class="font-serif text-2xl md:text-3xl text-charcoal">
+              Autumn Leaves — Solo Guitar Arrangement
+            </h3>
+            <p id="active-video-desc" class="text-sm text-umber font-light max-w-2xl">
+              Full note-for-note transcription including chord voicings, rhythmic phrasing, and left-hand fingering suggestions.
+            </p>
+          </div>
+
+          <div class="shrink-0 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <a id="active-video-payhip-btn"
+               href="https://payhip.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-oak px-6 py-3.5 rounded-full text-xs uppercase tracking-widest font-medium inline-flex items-center justify-center gap-2">
+              <span>Get PDF Tab on Payhip</span>
+              <span id="active-video-price" class="opacity-80">• €6.99</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Selector Strip -->
+      <div id="video-selector-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Populated dynamically from tabCatalog -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PDF Tablature Catalog (Payhip Store Links) -->
+  <section id="tabs" class="py-20 md:py-24 border-b border-stone">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-oakDark mb-2">Sheet Music &amp; Tablature</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-charcoal font-normal">
+            PDF Tabs Available on Payhip
+          </h2>
+          <p class="text-sm text-umber font-light mt-2 max-w-xl">
+            Every PDF includes clean guitar tablature, standard musical notation, tempo markings, and chord diagrams. Instant digital download via Payhip.
+          </p>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="flex flex-wrap gap-2" id="tab-filters">
+          <button data-filter="all" class="filter-pill active px-4 py-2 rounded-full text-xs uppercase tracking-wider border border-stone text-umber transition-colors">
+            All Tabs
+          </button>
+          <button data-filter="Fingerstyle" class="filter-pill px-4 py-2 rounded-full text-xs uppercase tracking-wider border border-stone text-umber transition-colors">
+            Fingerstyle
+          </button>
+          <button data-filter="Arrangement" class="filter-pill px-4 py-2 rounded-full text-xs uppercase tracking-wider border border-stone text-umber transition-colors">
+            Arrangements
+          </button>
+          <button data-filter="Melodic" class="filter-pill px-4 py-2 rounded-full text-xs uppercase tracking-wider border border-stone text-umber transition-colors">
+            Melodic / Electric
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Cards Grid -->
+      <div id="tabs-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Populated dynamically from tabCatalog -->
+      </div>
+
+      <!-- Payhip Store Banner -->
+      <div class="mt-12 rounded-2xl bg-sand border border-stone p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="space-y-2 max-w-xl">
+          <p class="text-xs uppercase tracking-widest text-sage font-medium">Official Digital Storefront</p>
+          <h3 class="font-serif text-3xl text-charcoal">Looking for the complete PDF collection?</h3>
+          <p class="text-sm text-umber font-light">
+            Browse all released transcriptions, bundle packs, and newly added guitar tabs directly on my Payhip page.
+          </p>
+        </div>
+        <a id="banner-payhip-btn" href="https://payhip.com" target="_blank" rel="noopener noreferrer"
+           class="btn-oak px-7 py-3.5 rounded-full text-xs uppercase tracking-widest font-medium shrink-0 inline-flex items-center gap-2">
+          <span>Open Full Payhip Shop</span>
+          <span>↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 md:py-24 border-b border-stone">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+      <p class="text-xs uppercase tracking-widest text-oakDark">About the Musician</p>
+      <h2 class="font-serif text-4xl md:text-5xl text-charcoal font-normal">
+        Simplicity, tone, and clarity on six strings.
+      </h2>
+      <p class="text-umber text-base md:text-lg leading-relaxed font-light">
+        Hi, I’m <span class="text-charcoal font-medium">Suraj Bhoelai</span>. On my YouTube channel, I share stripped-back, expressive guitar arrangements and melodic pieces. Because many viewers asked how to play the exact voicings and nuances from my videos, I transcribe each arrangement by hand into clean, easy-to-read PDF tablature—available exclusively on Payhip.
+      </p>
+      <div class="pt-4 flex justify-center gap-6 text-xs uppercase tracking-widest text-umber">
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="hover:text-charcoal border-b border-stone pb-1">YouTube</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-charcoal border-b border-stone pb-1">Instagram</a>
+        <a id="about-payhip-link" href="https://payhip.com" target="_blank" rel="noopener noreferrer" class="hover:text-charcoal border-b border-stone pb-1">Payhip</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 md:py-24">
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-5 space-y-5">
+        <p class="text-xs uppercase tracking-widest text-oakDark">Contact</p>
+        <h2 class="font-serif text-4xl text-charcoal font-normal">
+          Tab requests &amp; inquiries
+        </h2>
+        <p class="text-sm text-umber font-light leading-relaxed">
+          Have a question about a specific PDF download on Payhip, or want to suggest a song for a future YouTube video and transcription? Feel free to send a message.
+        </p>
+
+        <div class="pt-3 space-y-2">
+          <p class="text-xs uppercase tracking-widest text-muted">Direct Email</p>
+          <div class="flex items-center gap-3">
+            <span class="text-sm font-medium text-charcoal">info@surajbhoelai.com</span>
+            <button id="copy-email-btn" type="button"
+                    class="text-xs px-3 py-1 rounded-full bg-sand border border-stone text-umber hover:text-charcoal transition-colors">
+              Copy
+            </button>
+          </div>
+          <p id="copy-feedback" class="text-xs text-sage hidden">Email address copied to clipboard.</p>
+        </div>
+      </div>
+
+      <div class="md:col-span-7">
+        <form id="contact-form" class="japandi-card rounded-2xl p-6 md:p-8 space-y-5">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-umber mb-2" for="name">Your Name</label>
+              <input id="name" type="text" required placeholder="John Doe"
+                     class="w-full px-4 py-3 rounded-xl bg-linen border border-stone text-sm text-charcoal focus:outline-none focus:border-oak" />
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-umber mb-2" for="email">Email Address</label>
+              <input id="email" type="email" required placeholder="john@example.com"
+                     class="w-full px-4 py-3 rounded-xl bg-linen border border-stone text-sm text-charcoal focus:outline-none focus:border-oak" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-umber mb-2" for="subject">Subject</label>
+            <select id="subject"
+                    class="w-full px-4 py-3 rounded-xl bg-linen border border-stone text-sm text-charcoal focus:outline-none focus:border-oak">
+              <option value="Tab Request">Song / Tablature Request</option>
+              <option value="Payhip Support">Payhip PDF Download Question</option>
+              <option value="Collaboration">Collaboration / Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-umber mb-2" for="message">Message</label>
+            <textarea id="message" rows="4" required placeholder="Write your message or song request here..."
+                      class="w-full px-4 py-3 rounded-xl bg-linen border border-stone text-sm text-charcoal focus:outline-none focus:border-oak"></textarea>
+          </div>
+
+          <button type="submit" class="btn-oak px-7 py-3.5 rounded-full text-xs uppercase tracking-widest font-medium">
+            Send Message
+          </button>
+          <p id="form-feedback" class="text-xs text-sage hidden pt-1">
+            Thank you! Your message has been prepared. You can also reach me directly at info@surajbhoelai.com.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-stone bg-sand/60 py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
+      <p>© <span id="year"></span> Suraj Bhoelai (www.surajbhoelai.com). All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="#videos" class="hover:text-charcoal">Performances</a>
+        <a href="#tabs" class="hover:text-charcoal">PDF Tabs</a>
+        <a id="footer-payhip-link" href="https://payhip.com" target="_blank" rel="noopener noreferrer" class="hover:text-charcoal">Payhip Store ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // =========================================================================
+    // CONFIGURATION: Update your Payhip Store URL & YouTube + Tab entries below
+    // =========================================================================
+    const PAYHIP_STORE_URL = 'https://payhip.com'; // Replace with your Payhip store link (e.g. 'https://payhip.com/SurajBhoelai')
+
+    const tabCatalog = [
+      {
+        id: 'autumn-leaves',
+        title: 'Autumn Leaves — Solo Guitar Arrangement',
+        category: 'Fingerstyle',
+        tuning: 'Standard (E A D G B E)',
+        difficulty: 'Intermediate',
+        pages: '4 Pages PDF',
+        price: '€6.99',
+        youtubeId: 'jfKfPfyJRdk', // Replace with your real 11-character YouTube video ID
+        payhipUrl: 'https://payhip.com', // Replace with direct Payhip product URL for this PDF
+        description: 'Full note-for-note transcription including chord voicings, rhythmic phrasing, and left-hand fingering suggestions.',
+      },
+      {
+        id: 'midnight-rain',
+        title: 'Midnight Rain — Acoustic Fingerstyle',
+        category: 'Fingerstyle',
+        tuning: 'DADGAD',
+        difficulty: 'Intermediate',
+        pages: '5 Pages PDF',
+        price: '€7.99',
+        youtubeId: '5qap5aO4i9A', // Replace with your real 11-character YouTube video ID
+        payhipUrl: 'https://payhip.com', // Replace with direct Payhip product URL for this PDF
+        description: 'Warm open-tuning fingerstyle arrangement transcribed measure by measure with harmonics and percussive accents.',
+      },
+      {
+        id: 'golden-hour',
+        title: 'Golden Hour — Expressive Guitar Cover',
+        category: 'Arrangement',
+        tuning: 'Standard (Capo 2)',
+        difficulty: 'Intermediate – Advanced',
+        pages: '6 Pages PDF',
+        price: '€8.99',
+        youtubeId: 'DWcJFNfaw9c', // Replace with your real 11-character YouTube video ID
+        payhipUrl: 'https://payhip.com', // Replace with direct Payhip product URL for this PDF
+        description: 'Complete solo arrangement combining melody, bassline, and arpeggiated accompaniment in clean PDF notation.',
+      },
+      {
+        id: 'velvet-echoes',
+        title: 'Velvet Echoes — Clean Electric Ballad',
+        category: 'Melodic',
+        tuning: 'Standard (E A D G B E)',
+        difficulty: 'Intermediate',
+        pages: '4 Pages PDF',
+        price: '€6.99',
+        youtubeId: 'rUxyKA_-grg', // Replace with your real 11-character YouTube video ID
+        payhipUrl: 'https://payhip.com', // Replace with direct Payhip product URL for this PDF
+        description: 'Melodic lead phrasing, double-stops, and expressive bends transcribed exactly as played in the YouTube session.',
+      },
+      {
+        id: 'stillness-in-c',
+        title: 'Stillness in C — Original Composition',
+        category: 'Arrangement',
+        tuning: 'Drop D (D A D G B E)',
+        difficulty: 'Beginner – Intermediate',
+        pages: '3 Pages PDF',
+        price: '€5.99',
+        youtubeId: 'lTRiuFIWV54', // Replace with your real 11-character YouTube video ID
+        payhipUrl: 'https://payhip.com', // Replace with direct Payhip product URL for this PDF
+        description: 'Minimalist Drop-D composition focused on dynamics, sustain, and open-string resonance.',
+      },
+      {
+        id: 'horizon-theme',
+        title: 'Horizon Theme — Melodic Lead Study',
+        category: 'Melodic',
+        tuning: 'Eb Standard',
+        difficulty: 'Advanced',
+        pages: '5 Pages PDF',
+        price: '€7.99',
+        youtubeId: '4xDzrJKXOOY', // Replace with your real 11-character YouTube video ID
+        payhipUrl: 'https://payhip.com', // Replace with direct Payhip product URL for this PDF
+        description: 'Detailed transcription with picking directions, slides, legato runs, and chord symbols above every bar.',
+      },
+    ];
+
+    // Apply global Payhip store URLs
+    ['nav-payhip-btn', 'banner-payhip-btn', 'about-payhip-link', 'footer-payhip-link'].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.href = PAYHIP_STORE_URL;
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    let activeVideoId = tabCatalog[0].id;
+
+    function selectVideo(item, shouldScroll = false) {
+      activeVideoId = item.id;
+      document.getElementById('main-youtube-player').src = `https://www.youtube.com/embed/${item.youtubeId}?rel=0`;
+      document.getElementById('active-video-category').textContent = item.category;
+      document.getElementById('active-video-tuning').textContent = `Tuning: ${item.tuning}`;
+      document.getElementById('active-video-pages').textContent = item.pages;
+      document.getElementById('active-video-title').textContent = item.title;
+      document.getElementById('active-video-desc').textContent = item.description;
+      document.getElementById('active-video-price').textContent = `• ${item.price}`;
+      document.getElementById('active-video-payhip-btn').href = item.payhipUrl;
+      document.getElementById('hero-featured-title').textContent = item.title;
+
+      renderVideoSelector();
+
+      if (shouldScroll) {
+        document.getElementById('videos').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function renderVideoSelector() {
+      const grid = document.getElementById('video-selector-grid');
+      grid.innerHTML = '';
+
+      tabCatalog.slice(0, 4).forEach((item) => {
+        const isActive = item.id === activeVideoId;
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = `text-left rounded-xl p-3.5 border transition-all ${
+          isActive
+            ? 'bg-sand border-oak shadow-sm'
+            : 'bg-linen/70 border-stone hover:border-oak/60 hover:bg-sand/60'
+        }`;
+        card.innerHTML = `
+          <div class="aspect-video rounded-lg overflow-hidden bg-clay mb-3 relative">
+            <img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg"
+                 alt="${item.title}"
+                 class="w-full h-full object-cover" />
+            <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-charcoal/85 text-linen text-[10px] uppercase tracking-wider">
+              ${isActive ? 'Playing' : 'Watch'}
+            </span>
+          </div>
+          <p class="text-[11px] uppercase tracking-wider text-oakDark">${item.category}</p>
+          <h4 class="font-serif text-lg text-charcoal leading-snug mt-0.5 line-clamp-1">${item.title}</h4>
+        `;
+        card.addEventListener('click', () => selectVideo(item, false));
+        grid.appendChild(card);
+      });
+    }
+
+    function renderTabsCatalog(filter = 'all') {
+      const grid = document.getElementById('tabs-grid');
+      grid.innerHTML = '';
+
+      const filtered = filter === 'all'
+        ? tabCatalog
+        : tabCatalog.filter((item) => item.category === filter);
+
+      filtered.forEach((item) => {
+        const card = document.createElement('article');
+        card.className = 'japandi-card rounded-2xl p-6 flex flex-col justify-between';
+        card.innerHTML = `
+          <div>
+            <div class="aspect-video rounded-xl overflow-hidden bg-clay border border-stone mb-5 relative group cursor-pointer" data-watch="${item.id}">
+              <img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg"
+                   alt="${item.title}"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-charcoal/25 group-hover:bg-charcoal/15 transition-colors flex items-center justify-center">
+                <span class="w-11 h-11 rounded-full bg-linen/95 text-charcoal flex items-center justify-center shadow-md text-xs pl-0.5">
+                  ▶
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-linen/95 text-charcoal text-[10px] uppercase tracking-widest">
+                ${item.pages}
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-muted uppercase tracking-wider mb-2">
+              <span class="text-oakDark font-medium">${item.category}</span>
+              <span>${item.difficulty}</span>
+            </div>
+
+            <h3 class="font-serif text-2xl text-charcoal leading-snug mb-2">
+              ${item.title}
+            </h3>
+
+            <p class="text-xs text-muted mb-3">Tuning: ${item.tuning}</p>
+
+            <p class="text-sm text-umber font-light leading-relaxed mb-6">
+              ${item.description}
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-stone flex items-center justify-between gap-3">
+            <div>
+              <span class="block text-[10px] uppercase tracking-widest text-muted">PDF Download</span>
+              <span class="font-serif text-2xl text-charcoal">${item.price}</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <button type="button" data-watch="${item.id}"
+                      class="btn-outline px-3.5 py-2.5 rounded-full text-[11px] uppercase tracking-wider">
+                Video
+              </button>
+              <a href="${item.payhipUrl}" target="_blank" rel="noopener noreferrer"
+                 class="btn-oak px-4 py-2.5 rounded-full text-[11px] uppercase tracking-wider font-medium inline-flex items-center gap-1.5">
+                <span>Buy on Payhip</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        `;
+
+        card.querySelectorAll(`[data-watch="${item.id}"]`).forEach((btn) => {
+          btn.addEventListener('click', () => selectVideo(item, true));
+        });
+
+        grid.appendChild(card);
+      });
+    }
+
+    // Filter button handlers
+    document.querySelectorAll('#tab-filters .filter-pill').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#tab-filters .filter-pill').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderTabsCatalog(btn.dataset.filter);
+      });
+    });
+
+    // Copy email handler
+    document.getElementById('copy-email-btn').addEventListener('click', () => {
+      navigator.clipboard.writeText('info@surajbhoelai.com');
+      const feedback = document.getElementById('copy-feedback');
+      feedback.classList.remove('hidden');
+      setTimeout(() => feedback.classList.add('hidden'), 3000);
+    });
+
+    // Contact form handler
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('form-feedback').classList.remove('hidden');
+      e.target.reset();
+    });
+
+    // Initialize page
+    selectVideo(tabCatalog[0], false);
+    renderTabsCatalog('all');
+  </script>
+</body>
+</html>
