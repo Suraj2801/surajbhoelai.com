@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suraj Bhoelai — Guitar Tablature &amp; Videos</title>
+  <meta name="description" content="Official website of guitarist Suraj Bhoelai. Watch guitar performances and get PDF tablatures on Payhip." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #0b0b0e;
+      color: #f3f4f6;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased relative overflow-x-hidden">
+
+  <!-- ACHTERGROND VIDEO -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <video autoplay muted loop playsinline class="w-full h-full object-cover">
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+    <!-- Subtiele overlay zodat de tekst goed leesbaar blijft maar de video mooi zichtbaar is -->
+    <div class="absolute inset-0 bg-black/40"></div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="w-full py-6 px-6 flex justify-between items-center max-w-4xl mx-auto relative z-10">
+    <div>
+      <span class="font-bold tracking-wider text-lg uppercase">Suraj Bhoelai</span>
+    </div>
+    <div class="flex items-center gap-6 text-sm text-gray-400">
+      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">YouTube</a>
+      <a href="https://payhip.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Payhip Tabs</a>
+    </div>
+  </header>
+
+  <!-- Main Content: Single Video & Payhip Link -->
+  <main class="w-full max-w-3xl mx-auto px-4 py-8 flex flex-col items-center text-center relative z-10">
+    
+    <!-- Titel / Intro -->
+    <h1 class="text-xl md:text-2xl font-semibold mb-6 tracking-wide">
+      Guitar Performances &amp; Tablature
+    </h1>
+
+    <!-- Uitgelichte YouTube Video -->
+    <div class="w-full aspect-video rounded-xl overflow-hidden shadow-2xl bg-black border border-gray-800/80 mb-8">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/jfKfPfyJRdk?rel=0"
+        title="Suraj Bhoelai Guitar Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Contact / Info regel -->
+    <p class="text-sm text-gray-300 mb-8">
+      Contact &amp; bookings: <a href="mailto:info@surajbhoelai.com" class="text-white underline hover:text-gray-200">info@surajbhoelai.com</a>
+    </p>
+
+    <!-- Grote Payhip Tabs Knop -->
+    <a href="https://payhip.com" target="_blank" rel="noopener noreferrer"
+       class="w-full sm:w-auto min-w-[280px] bg-[#0066ff] hover:bg-[#0052cc] text-white font-semibold py-4 px-8 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-3 text-base">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+      </svg>
+      <span>CLICK HERE FOR TABS...</span>
+    </a>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-6 text-center text-xs text-gray-400 relative z-10">
+    <p>&copy; <span id="year"></span> Suraj Bhoelai. All rights reserved.</p>
+  </footer>
+
+  <main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
