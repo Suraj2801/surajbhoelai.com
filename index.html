@@ -33,7 +33,7 @@
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between antialiased relative overflow-x-hidden">
+<body class="min-h-[100dvh] flex flex-col justify-between antialiased relative overflow-x-hidden">
 
   <!-- ACHTERGROND VIDEO -->
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
@@ -41,33 +41,32 @@
       <source src="background.mp4" type="video/mp4" />
     </video>
     <!-- Subtiele overlay zodat de tekst goed leesbaar blijft maar de video mooi zichtbaar is -->
-    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="absolute inset-0 bg-black/50 sm:bg-black/40"></div>
   </div>
 
-  <!-- Header / Nav -->
-  <header class="w-full py-6 px-6 flex justify-between items-center max-w-4xl mx-auto relative z-10">
+  <!-- Header / Nav (Op mobiel gecentreerd onder elkaar, op desktop naast elkaar) -->
+  <header class="w-full pt-5 pb-3 sm:py-6 px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 max-w-4xl mx-auto relative z-10">
     <div>
-      <a href="#" class="flex items-center">
-        <!-- Logo is hier een maatje kleiner gezet (h-28 op mobiel, h-36 op desktop) -->
-        <img src="logo.png" alt="Suraj Bhoelai Logo" class="h-28 md:h-36 w-auto object-contain" />
+      <a href="#" class="flex items-center justify-center">
+        <img src="logo.png" alt="Suraj Bhoelai Logo" class="h-20 sm:h-28 md:h-36 w-auto object-contain" />
       </a>
     </div>
-    <div class="flex items-center gap-6 text-sm text-gray-400">
-      <a href="https://www.youtube.com/@surajbhoelai" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">YouTube</a>
-      <a href="https://payhip.com/surajbhoelai" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Payhip Tabs</a>
-    </div>
+    <nav class="flex items-center justify-center gap-6 text-xs sm:text-sm text-gray-300 sm:text-gray-400">
+      <a href="https://www.youtube.com/@surajbhoelai" target="_blank" rel="noopener noreferrer" class="py-1 px-2 hover:text-white transition-colors">YouTube</a>
+      <a href="https://payhip.com/surajbhoelai" target="_blank" rel="noopener noreferrer" class="py-1 px-2 hover:text-white transition-colors">Payhip Tabs</a>
+    </nav>
   </header>
 
   <!-- Main Content: Single Video & Payhip Link -->
-  <main class="w-full max-w-3xl mx-auto px-4 py-8 flex flex-col items-center text-center relative z-10">
+  <main class="w-full max-w-3xl mx-auto px-4 py-4 sm:py-8 flex flex-col items-center text-center relative z-10">
     
     <!-- Titel / Intro -->
-    <h1 class="text-xl md:text-2xl font-semibold mb-6 tracking-wide">
+    <h1 class="text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 tracking-wide leading-snug">
       Suraj Bhoelai Official Website
     </h1>
 
     <!-- Uitgelichte YouTube Video -->
-    <div class="w-full aspect-video rounded-xl overflow-hidden shadow-2xl bg-black border border-gray-800/80 mb-8">
+    <div class="w-full aspect-video rounded-xl overflow-hidden shadow-2xl bg-black border border-gray-800/80 mb-6 sm:mb-8">
       <iframe
         class="w-full h-full"
         src="https://www.youtube.com/embed/bd-XvaTI468?rel=0"
@@ -79,14 +78,15 @@
     </div>
 
     <!-- Contact / Info regel -->
-    <p class="text-sm text-gray-300 mb-8">
-      Contact &amp; Tab requests: <a href="mailto:info@surajbhoelai.com" class="text-white underline hover:text-gray-200">info@surajbhoelai.com</a>
+    <p class="text-xs sm:text-sm text-gray-300 mb-6 sm:mb-8 leading-relaxed">
+      Contact &amp; Tab requests:<br class="sm:hidden" />
+      <a href="mailto:info@surajbhoelai.com" class="text-white underline hover:text-gray-200 break-all">info@surajbhoelai.com</a>
     </p>
 
     <!-- Grote Payhip Tabs Knop -->
     <a href="https://payhip.com/surajbhoelai" target="_blank" rel="noopener noreferrer"
-       class="w-full sm:w-auto min-w-[280px] bg-[#ff0000] hover:bg-[#cc0000] text-white font-semibold py-4 px-8 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-3 text-base">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+       class="w-full sm:w-auto sm:min-w-[280px] bg-[#ff0000] hover:bg-[#cc0000] active:scale-[0.99] text-white font-semibold py-4 px-6 sm:px-8 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-3 text-sm sm:text-base">
+      <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
       </svg>
       <span>CLICK HERE FOR TABS...</span>
@@ -95,7 +95,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="w-full py-6 text-center text-xs text-gray-400 relative z-10">
+  <footer class="w-full py-5 sm:py-6 px-4 text-center text-[11px] sm:text-xs text-gray-400 relative z-10">
     <p>&copy; <span id="year"></span> Suraj Bhoelai. All rights reserved.</p>
   </footer>
 
